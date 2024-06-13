@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>my page</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<p th:text="'time on the server is' + ${theDate}"/>
+<p th:text="' returning names ' + ${names}"/>
+<p>my name is th:text="${names}"</p>
+</body>
+</html>

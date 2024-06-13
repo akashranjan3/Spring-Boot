@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Customer Registration </title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <style>
+        .error{
+        color: red;
+        }
+
+    </style>
+</head>
+<body>
+<h1>This is my form </h1>
+<form th:action="@{/processForm}" th:object="${customer}" method="post">
+    First name: <input type="text" th:field="*{firstName}"/><br><br>
+    last name: <input type="text" th:field="*{lastName}"/><br><br>
+    <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="error"></span><br><br>
+    free passes: <input type="text" th:field="*{freePasses}"/><br><br>
+    <span th:if="${#fields.hasErrors('freePasses')}" th:errors="*{freePasses}" class="error"></span><br><br>
+    postal code: <input type="text" th:field="*{postalCode}"/><br><br>
+    <span th:if="${#fields.hasErrors('postalCode')}" th:errors="*{postalCode}" class="error"></span><br><br>
+ course code: <input type="text" th:field="*{courseCode}"/><br><br>
+    <span th:if="${#fields.hasErrors('courseCode')}" th:errors="*{courseCode}" class="error"></span><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

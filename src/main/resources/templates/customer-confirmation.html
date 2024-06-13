@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form submitter</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1> Your form has been submitted successfully</h1>
+the customer is confirmed <Br>
+<span th:text="${customer.firstName}"/>
+<span th:text="${customer.lastName}"/>
+<span th:text="${customer.freePasses}"/>
+<span th:text="${customer.postalCode}"/>
+<span th:text="${customer.courseCode}"/>
+</body>
+</html>
