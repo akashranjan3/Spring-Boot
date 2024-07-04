@@ -1,5 +1,6 @@
-package mysql.practice.demo.Udemy.first.rest.coach.autowire.constructor;
+package mysql.practice.demo.Udemy.first.rest.coach.autowire.constructor.controller;
 
+import mysql.practice.demo.Udemy.first.rest.coach.autowire.constructor.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
